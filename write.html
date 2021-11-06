@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write</title>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <style type="text/css">
+            .navbar{
+                background-color: rgb(0,0,0); /* Fallback color */
+          		background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+          		color: white;
+          		font-family: Ink Free;
+          		font-weight: bold;
+            }
+
+		.form{
+			margin-left: 450px;
+			border-radius: 5px;	
+		}
+		.box{
+			border-radius: 7px;
+			width: 250px;
+			height: 30px;
+			border: 1px;
+			box-shadow: 0 0 20px 0 black;
+			font-family: Ink Free;
+			font-weight: bold;
+		}
+		.text{
+			font-size: 30px;
+			text-shadow: 3px 3px black;
+			color: white;
+		}
+		.sub{
+			margin-top: 15px;
+			border-radius: 50px;
+			border: 1px;
+			font-size: 20px;
+			font-family: Ink Free;
+			font-weight: bold;x
+		}
+		.sub:hover{
+			box-shadow: 0 0 15px 0 black;
+			cursor: pointer;
+		}
+
+	</style>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body background="sub2.png">
+	 <nav>
+      <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <a href="write.html"class="navbar-brand" style="color: white">
+          <img src="Capture.png" width="40" height="40"> College Diaries</a>
+
+
+    </nav>
+
+	<table style="font-size: 15px;">
+		<tr>
+			<td><form action="upload.php" method="post" enctype="multipart/form-data">
+			  <p class="text" style="margin-left: 80px;font-size: 25px;color: white;">Select image to upload:</p>
+			 <input type="file" name="fileToUpload" id="fileToUpload" style="margin-left: 80px;color: white;font-size: 15px;"><br><br>
+			  <input type="submit" value="Upload Image" name="submit" style="margin-left: 80px;">
+			</form></td>
+			<td>
+	<div>
+		<br><br>
+		<form class="form" style="margin-left: 490px;opacity: 0.8">
+			<br>
+			<label class="text">Title</label><br><br>
+			<input class="box" type="text" name="title" placeholder="Untitled"><br><br>
+			<label class="text">Story</label><br>
+			<textarea rows="6" cols="100" style="border-radius: 7px;border: 1px;box-shadow: 0 0 20px 0 black;font-family: Ink Free;font-weight: bold"></textarea><br><br>
+			<label class="text">Institution</label><br><br>
+			<input class="box" type="text" name="college" placeholder="College" style="font-family: Ink Free;"><br><br>
+			<label class="text">Genre</label><br>
+			<select class="box">
+				<option style="border-radius: 7px;"></option>
+				<option style="border-radius: 7px;">Romance</option>
+				<option style="border-radius: 7px;">Horror</option>
+				<option style="border-radius: 7px;">Hostle</option>
+				<option style="border-radius: 7px;">Fights</option>
+				<option style="border-radius: 7px;">Bunking Classes</option>
+				<option style="border-radius: 7px;">Achievements</option>
+			</select><br><br>
+		</form>
+		<a href="home.html"><button class="sub" style="margin-left: 770px;box-shadow: black">SUBMIT</button></a><br><br></td>
+		</tr>
+		
+	</table>
+	
+	</div>
+
+</body>
+</html>
